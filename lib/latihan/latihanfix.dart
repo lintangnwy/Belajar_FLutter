@@ -13,10 +13,16 @@ class LatihanFix extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text("Ini Judul"),
-          Container(height: 40, width: 520, color: Colors.white),
-          SizedBox(height: 20),
-
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.only(left: 16),
+            child: Text(
+              "Ini Judul",
+              style: TextStyle(color: Colors.white),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Container(height: 40, width: 520, color: Colors.amber,),
           Container(
             width: double.infinity,
             padding: EdgeInsets.only(left: 16),

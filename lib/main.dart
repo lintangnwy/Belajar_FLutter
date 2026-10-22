@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lintang/latihan/latihan2.dart';
 import 'package:flutter_lintang/latihan/latihanfix.dart';
 import 'package:flutter_lintang/row_column/row_column.dart';
 import 'package:flutter_lintang/row_column/row_widget.dart';
 import 'package:flutter_lintang/row_column/column.dart';
 import 'package:flutter_lintang/row_column/layout_widget.dart';
 import 'package:flutter_lintang/latihan/latihan1.dart';
+import 'package:flutter_lintang/sized_expanded_stack/ExpandedWidget.dart';
+import 'package:flutter_lintang/sized_expanded_stack/LayoutDua.dart';
+import 'package:flutter_lintang/sized_expanded_stack/LayoutEmpat.dart';
+import 'package:flutter_lintang/sized_expanded_stack/LayoutSatu.dart';
+import 'package:flutter_lintang/sized_expanded_stack/LayoutTiga.dart';
+import 'package:flutter_lintang/sized_expanded_stack/SizedBoxWidget.dart';
+import 'package:flutter_lintang/sized_expanded_stack/StackWidget.dart';
 void main() {
   runApp(MyApp());
 }
@@ -17,9 +25,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-        ),
-        body: LatihanFix(),
+        // appBar: AppBar(
+        // ),
+        body: Latihan2(),
       ),
     );
   }

@@ -1,30 +1,44 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_lintang/main.dart';
+class WidgetTest extends StatelessWidget {
+  const WidgetTest({super.key});
 
-void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body:  Container(
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+      width: double.infinity,
+      height: double.infinity,
+      margin: EdgeInsets.all(20),
+      padding: EdgeInsets.only(top: 1),
+      decoration: BoxDecoration(
+        color: Colors.black12,
+        borderRadius : BorderRadius.circular(20),
+        border: Border.all(color: Colors.black, width: 5),
+      ),
+          child: Row(
+        //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         children: [
+           Icon(
+            Icons.settings,
+            color: Colors.black,
+            size: 50.0,
+          ),
+          
+          Icon(
+            Icons.folder,
+            color: Colors.black,
+            size: 50.0,
+          ),
+          Icon(
+            Icons.search,
+            color: Colors.black,
+            size: 50.0,
+          ),
+        ]
+      ),  
+        )
+    );
+  }
 }

@@ -5,7 +5,8 @@ class Latihan1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      body: Container(
 
       width: double.infinity,
       height: double.infinity,
@@ -37,8 +38,8 @@ class Latihan1 extends StatelessWidget {
           ),
         ]
       ),  
-        );
-
+        ),
+    );
      
 }
 }

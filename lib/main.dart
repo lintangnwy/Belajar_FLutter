@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoute.menu,
+      initialRoute: AppRoute.menus,
       routes: AppRoute.routes,
       // routes: {
       //   '/': (context) => ContohNav(),

@@ -23,7 +23,7 @@ class _FormEkskulState extends State<FormEkskul> {
   bool _setuju = false;
 
   @override 
-  void initstate(){
+  void initState(){
     tglDaftarC.text = '';
     super.initState();
   }

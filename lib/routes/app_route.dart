@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_lintang/GridView/gridBasic.dart';
 import 'package:flutter_lintang/container_widget/container_widget.dart';

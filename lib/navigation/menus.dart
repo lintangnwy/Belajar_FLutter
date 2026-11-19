@@ -23,6 +23,15 @@ class Menu extends StatelessWidget {
         'number': '02',
         'color': emerald,
       },
+
+      {
+        'title': 'Peminjaman',
+        'subtitle': 'Sirkulasi Buku',
+        'icon': Icons.swap_horiz_rounded,
+        'route': '/CommentsPage', // Sesuaikan route jika sudah ada
+        'number': '02',
+        'color': emerald,
+      },
  ];
 
     return Scaffold(
